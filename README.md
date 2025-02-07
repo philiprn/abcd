@@ -21,6 +21,7 @@ The dataset is generated as follows.
 We synthesize the variables in reversed order, which means that we start with the outcome and then iterate from the most important variable down the list to the least important variable.
 The outcome variable, as the first predictor, is randomly sampled, which is then used to synthesize the next one, using a classification and regression tree algorithm.
 The last variable is synthesized using all other variables as predictors.
+Except for the visit sequence (the order of the variables used to synthesize the others), these are default settings in synthpop.
 This generates a dataset which is expectedly a stronger version of itself, so to speak. 
 This suits the illustrative purpose of the dataset.
 
