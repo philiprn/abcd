@@ -12,7 +12,7 @@ The data analyses are implemented in Python 3.9.20, using the CatBoost (v.1.0.6)
 In the online notebook we analyze a synthetic version of the data, as the original data cannot be shared due to privacy regulations. 
 
 ## Synthetic data
-In the R script we generate a synthetic copy of one of the original datasets using the R package synthpop.
+In the R script we generate a synthetic copy of one of the original datasets using the R package **synthpop**.
 In the synthetic dataset all original values are replaced with synthetic ones which mimic the original data and preserve the relationships between variables.
 This ensures that analysis results are qualitatively similar as compared to the real data.
 
