@@ -8,11 +8,11 @@ Philip Rutten, Susanne de Rooij, Mark van de Wiel
 
 ## Jupyter notebook
 In the notebook we provide a step-by-step walk-through of the analysis pipeline.
-The data analyses are implemented in Python 3.9.20, using the CatBoost (v.1.0.6) and SHAP (v.0.46.0) libraries, and Scikit-learn (v.1.2.2).
+We use Python 3.9.20, and the CatBoost (v.1.0.6), SHAP (v.0.46.0), and Scikit-learn (v.1.2.2) libraries.
 In the online notebook we analyze a synthetic version of the data, as the original data cannot be shared due to privacy regulations. 
 
 ## Synthetic data
-In the R script we generate a synthetic copy of one of the original datasets using the R package **synthpop**.
+In the R script we generate a synthetic copy of the original data using the R package **synthpop**.
 In the synthetic dataset all original values are replaced with synthetic ones which mimic the original data and preserve the relationships between variables.
 This ensures that analysis results are qualitatively similar as compared to the real data.
 
