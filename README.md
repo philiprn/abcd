@@ -2,7 +2,7 @@
 
 This repository accompanies the paper:
 
-*Predictor discovery in epidemiological cohort data using Machine Learning techniques*
+*Predictor discovery in epidemiological cohort data using Machine Learning techniques: a methodology review*
 
 Philip Rutten, Susanne de Rooij, Mark van de Wiel
 
@@ -19,7 +19,7 @@ This ensures that analysis results are qualitatively similar as compared to the 
 The synthetic dataset is a copy of the top 50 most important variables of the phase 4 (age 11-12, $p=380$) dataset (analysed in the paper), together with a synthetic copy of the outcome variable (SDQ score at age 15-16).
 The dataset is generated as follows.
 We synthesize the variables in reversed order, which means that we start with the outcome and then iterate from the most important variable down the list to the least important variable.
-The outcome variable is randomly sampled as the first predictor, which is then used to synthesize the next one, using classification and regression trees (CART).
+The outcome variable, as the first predictor, is randomly sampled, which is then used to synthesize the next one, using a classification and regression tree algorithm.
 The last variable is synthesized using all other variables as predictors.
 This generates a dataset which is expectedly a stronger version of itself, so to speak. 
 This suits the illustrative purpose of the dataset.
