@@ -2,7 +2,7 @@
 
 This repository accompanies the paper:
 
-*Predictor discovery in epidemiological cohort data using Machine Learning techniques: a methodology review*
+*Predictor discovery in epidemiological cohort data using gradient boosted decision trees and SHAP: a worked example*
 
 Philip Rutten, Susanne de Rooij, Mark van de Wiel
 
