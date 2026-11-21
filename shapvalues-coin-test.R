@@ -34,7 +34,7 @@ for(k in 1:nc){
     order(colSums(abs(shap_values)),decreasing = TRUE)] == cn[k])
   
   offsets <- rowSums(shap_values[,-k])
-  qs <- quantile(offsets, p=seq(0,1,by=0.05), na.rm = TRUE)
+  qs <- quantile(offsets, p=seq(0,1,by=0.05))
   whblock <- function(x) which(qs>x)[1]
   blocks <- sapply(offsets, whblock)
   dattest <- data.frame(y_train, vartest = shap_values[,k], blocks=factor(blocks))
