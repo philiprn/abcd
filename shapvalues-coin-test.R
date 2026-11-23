@@ -47,7 +47,8 @@ for(k in 1:nc){
 # Compare rankings
 
 results <- data.frame(name = cn[order(npps)],
-                      pvalue = sort(npps), 
+                      pvalue = round(sort(npps),4),
+                      FDR = round(sort(p.adjust(npps, method = "BH")),4), 
                       SHAP = shap_imp_rank[order(npps)])
 
 head(results, 10)
