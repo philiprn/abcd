@@ -11,6 +11,10 @@ In the notebook we provide an example of the analysis pipeline as described in t
 We use Python 3.9.25, and the CatBoost (v.1.2.7), SHAP (v.0.48.0), and Scikit-learn (v.1.5.1) libraries.
 We analyze a synthetic version of the data, as the original data cannot be shared due to privacy regulations. 
 
+## Conditional independence tests
+In the R script we run conditional independence tests, using the coin package, on the SHAP values calculated on the test data.
+The script creates a comparison of different rankings, as described in the paper.
+
 ## Synthetic data
 In the R script we generate a synthetic copy of the original data using the R package **synthpop**.
 In the synthetic dataset all original values are replaced with synthetic ones which mimic the original data and preserve the relationships between variables.
