@@ -1,7 +1,7 @@
 library(coin)
 
 ################################################################################
-# Load the Shapley values on the trainset
+# Load the Shapley values calculated on the testset
 
 shap_values <- read.csv("shap_sdq_testset.csv")[,-1]
 
@@ -17,7 +17,7 @@ ybin <- rep(0,nrow(X))
 ybin[which(X$TotaalSDQkind_f5 >= quantile(X$TotaalSDQkind_f5,0.9))] <- 1
 
 ################################################################################
-# Get the train set
+# Get the test set
 
 y_train <- ybin[read.table("testset_indices.csv")[,1] + 1]
 
