@@ -3,7 +3,7 @@ library(coin)
 ################################################################################
 # Load the Shapley values on the trainset
 
-shap_values <- read.csv("shap_sdq_trainset.csv")[,-1]
+shap_values <- read.csv("shap_sdq_testset.csv")[,-1]
 
 # # Then remove from the SHAP matrix
 shap_values <- shap_values[,-which(colSums(abs(shap_values)) == 0)]
@@ -19,7 +19,7 @@ ybin[which(X$TotaalSDQkind_f5 >= quantile(X$TotaalSDQkind_f5,0.9))] <- 1
 ################################################################################
 # Get the train set
 
-y_train <- ybin[read.table("trainset_indices.csv")[,1] + 1]
+y_train <- ybin[read.table("testset_indices.csv")[,1] + 1]
 
 ################################################################################
 # Conditional independence tests
